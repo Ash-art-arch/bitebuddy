@@ -145,6 +145,7 @@
   height: 80vh;
   /* background-color: red; */
   
+  
 }
 .grid{
   display: flex;
@@ -169,6 +170,7 @@
   bottom: 0;
   left: 0;
   transform: translate(-25%,30%);
+  pointer-events:none ;
 }
 .grid i{
   font-size: 2rem;
@@ -184,4 +186,121 @@
   text-align: center;
   background-color: #89D69F;
   cursor: pointer;
+}
+.services{
+  margin-top: 1.5rem;
+    gap: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 750px;
+}
+.service-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:20px;
+
+}
+.service-top h2{
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.service-top p{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 60%;
+
+}
+.cards-grid{
+  margin-top: 1.5rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
+  flex-direction: row;
+  
+}
+.card{
+  width: 350px;
+  height: 400px;
+  background-color:#E6E8DD;
+  position: relative;
+  border-radius:15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .top{
+  display: flex;
+  padding: 3rem 2rem;
+ gap: 2rem;
+  align-items: center;
+  
+}
+.top p{
+  display: flex;
+  font-size: 1rem;
+  gap: 5px;
+  align-items: center;
+}
+.top p i{
+  color: #FBC208;
+}
+.top .first{
+  font-size: 1rem;
+  
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  vertical-align:middle;
+  text-align: center;
+  background-color: #89D69F;
+  
+}
+.top img{
+  width: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%,-20%);
+  object-fit: contain;
+  
+}
+.card .bottom{
+  height: 50%;
+  padding: 2rem 2rem; 
+  
+}
+.bottom h5{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-container p{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.button-container button{
+  padding: 10px 10px;
+  border-radius:15px;
+  outline: none;
+  width: 50%;
+  border: 1px solid #548776;
+  background-color: transparent;
+  color: #096704;
 }
