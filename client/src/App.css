@@ -58,7 +58,7 @@
 .home{
   background-color:#E6E8DD;
   width: 97%;
-  height:70%;
+  height:90vh;
   margin: 0px 30px;
   border-radius: 20px;
   display: flex;
@@ -71,7 +71,7 @@
   flex-basis: 45%;
   width: 100%;
   height: 100%;
-  padding: 2rem 5rem 0px;  
+  padding: 7rem 5rem 0px;  
 }
 .home .col-1 h3{
   font-size: 3.5rem;
@@ -194,7 +194,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 750px;
+    height: 800px;
 }
 .service-top{
   display: flex;
@@ -218,12 +218,12 @@
 }
 .cards-grid{
   margin-top: 1.5rem;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 4rem;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  gap: 3rem;
+  place-items: center;
+  width: 80%;
+
   
 }
 .card{
@@ -231,10 +231,11 @@
   height: 400px;
   background-color:#E6E8DD;
   position: relative;
-  border-radius:15px;
+  border-radius:2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.2s ease-in-out;
 }
 .card .top{
   display: flex;
@@ -251,6 +252,7 @@
 }
 .top p i{
   color: #FBC208;
+  
 }
 .top .first{
   font-size: 1rem;
@@ -265,10 +267,14 @@
   vertical-align:middle;
   text-align: center;
   background-color: #89D69F;
+  transition: all 0.1s ease-in-out;
   
 }
+.top .first:hover{
+  scale: 1.2;
+}
 .top img{
-  width: 100%;
+  width: 110%;
   mix-blend-mode: multiply;
   position: absolute;
   top: 0;
@@ -276,6 +282,23 @@
   transform: translate(30%,-20%);
   object-fit: contain;
   
+}
+
+.top .card-images{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border-radius:50% ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10%,-10%);
+  scale: 1.3;
+  object-fit: contain;
+  background-image: url(https://img.freepik.com/free-photo/spaghetti-with-vegetablesbroccolitomatoespeppers-isolated-white-background_123827-21345.jpg?w=1060&t=st=1697872448~exp=1697873048~hmac=788117a39633c065e25c8327d51f6b231f5500ca6071b54fec77192435b4dc2e);
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: multiply;
 }
 .card .bottom{
   height: 50%;
@@ -297,10 +320,250 @@
 }
 .button-container button{
   padding: 10px 10px;
-  border-radius:15px;
+  border-radius:2rem;
   outline: none;
   width: 50%;
   border: 1px solid #548776;
   background-color: transparent;
   color: #096704;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.menu{
+  width: 95%;
+  height: 87rem;
+  background-color: #EAF7F2;
+  margin-left: 2.5rem;
+  padding: 3rem 5rem;
+}
+.menu h1{
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.menu .menu-line{
+  width: 50%;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.menu .filters{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2.5rem;
+}
+.filters button{
+  padding: .5rem 2rem;
+  background-color: transparent;
+  border: 1px solid #565656;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.filters .active {
+  background-color: #548776;
+  color: white;
+}
+.menu hr{
+  margin-top: 2rem;
+    color: white;
+    margin-bottom:6rem ;
+}
+.menu .card{
+  background-color: #fff;
+}
+.card:hover{
+  box-shadow: 5px 5px 15px #757575;
+}
+.card button:hover{
+  background-color: #548776;
+  color: white;
+  scale: 1.1;
+}
+.menu-grid{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  gap: 3rem;
+  place-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.cta{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta button{
+  padding: .8rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: #548776;
+  color: white;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  
+
+}
+.cta button:hover{
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #565656;
+}
+.reviews{
+  width: 100%;
+  height: 40rem;
+  /* background-color: red */
+  ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+}
+.review{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  
+}
+.review-left{
+  flex-basis: 50%;
+  /* background-color: cyan; */
+  background-image: url('/photo2.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.review-right{
+  flex-basis: 50%;
+  /* background-color: yellow; */
+  
+  padding: 2rem 3rem;
+
+}
+.review-right h2{
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.review-right p{
+  font-size: .9rem;
+margin-bottom: 1.5rem;
+}
+.rating{
+  font-size: 1.3rem;
+  color :#FBC208;
+  margin-bottom: .5rem;
+}
+.rating i{
+  margin: .31rem;
+  
+}
+.rating i:first-child{
+  margin-left:0 ;
+}
+.review-name{
+  margin-bottom:2rem ;
+}
+.review-name p{
+  margin-bottom: .3rem;
+  font-size:1.1rem ;
+  
+
+}
+.review-name p:first-child{
+  font-weight: 600;
+}
+.review-button{
+  display: flex;
+  gap: 3rem;
+}
+.review-button i{
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #89D69F;
+    box-shadow: 3px 3px 10px #b0aeae;
+  
+}
+.subscription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+}
+.sub-container{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    position: relative;
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.sub-container .background{
+  background-image: url(https://img.freepik.com/free-photo/appetizing-spaghetti-italian-pasta-with-tomato-sauce_1150-20314.jpg?w=1060&t=st=1698330199~exp=1698330799~hmac=d578112ed0ddf7bd55fdc94b6139aba7667969d3ce6d2bc1550b4efb8d282846);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    filter: blur(2px);
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.text-container{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.text-container h1{
+  width: 60%;
+  height: 50%;
+  color: white;
+
+}
+.text-container input{
+  width: 100%;
+  padding: 1rem ;
+  outline: none;
+  border: 1px solid #757575;
+  border-radius: 1.2rem;
+}
+.text-container form{
+  width: 50%;
+  position: relative;
+}
+.text-container form button{
+  position: absolute;
+  right: 9px;
+  outline:  none;
+  border: 1px solid #757575;
+  background-color: #548776;
+  color: #fff;
+  font-size: 1rem;
+  top:.3rem;
+  border-radius: 1.2rem;
+  width: 25%;
+  padding: .6rem;
+  cursor: pointer;
 }
