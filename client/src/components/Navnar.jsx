@@ -1,16 +1,19 @@
+import {Link} from "react-router-dom"
 const Navbar=()=>{
     return(          <div className='nav'>
     <div className='logo'>BiteBuddy</div>
     <div className='nav-mid'>
-      <a href='#'>Menu</a>   
-      <a href='#'>Order</a>   
-      <a href='#'>Foods</a>   
-      <a href='#'>Service</a>   
-      <a href='#'>Restaurants</a>   
+      <Link to='#'>Menu</Link>   
+      <Link to='#'>Order</Link>   
+      <Link to='#'>Foods</Link>   
+      <Link to='#'>Service</Link>   
+      <Link to='#'>Restaurants</Link>   
     </div>
     <div className='nav-icons'>
-    <i class="ri-heart-line"></i>
-    <i class="ri-shopping-cart-line"></i>
+    {/* <i class="ri-heart-line"></i>
+    <i class="ri-shopping-cart-line"></i> */}
+    <i class="ri-login-circle-line"></i>
+    <Link to="/register">Register</Link>
     </div>
   </div>
   );
